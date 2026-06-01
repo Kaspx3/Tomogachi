@@ -42,4 +42,17 @@ body {
 #happy {
     height: 500px;
     width: 500px;
+    image-rendering: crisp-edges;
+}
+
+#sad {
+    height: 500px;
+    width: 500px;
+    image-rendering: crisp-edges;
+}
+
+#angry {
+    height: 500px;
+    width: 500px;
+    image-rendering: crisp-edges;
 }
