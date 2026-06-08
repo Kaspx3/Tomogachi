@@ -62,7 +62,7 @@ body {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    padding: 16px 72px;
+    padding: 32px 72px;
     border: none;
     border-radius: 999px;
     background: #ffd6e7;
@@ -92,3 +92,66 @@ body {
 .kitty-btn:hover::after {
     animation: wiggle 0.5s ease-in-out;
 }
+
+#reacth3 {
+    display: flex;
+    justify-content: center;
+}
+
+
+#btn {
+    text-align: center;
+  background-color: #EA4C89;
+  border-radius: 0px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
+
+ .bar-container {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 25px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .bar-fill {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #00c853, #64dd17);
+    transition: width 0.2s linear;
+  }
+
+  #barbutton {
+    padding: 8px 12px;
+    cursor: pointer;
+    
+  }
