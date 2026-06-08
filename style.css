@@ -1,17 +1,18 @@
 body {
+        height: 100vh;
     margin: 0;
-    height: 100vh;
+    position: relative;
     overflow: hidden;
 
     background: linear-gradient(-45deg,
-            #0f172a,
-            #1e3a8a,
-            #7c3aed,
-            #06b6d4,
-            #0f172a);
+            #af6fb8,
+            #c769c7,
+            #940749,
+            #9c175a,
+            #d34cbc);
 
     background-size: 400% 400%;
-    animation: gradientMove 12s ease infinite;
+    animation: gradientMove 8s ease infinite;
 }
 
 @keyframes gradientMove {
@@ -55,4 +56,39 @@ body {
     height: 500px;
     width: 500px;
     image-rendering: crisp-edges;
+}
+
+.kitty-btn {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 16px 72px;
+    border: none;
+    border-radius: 999px;
+    background: #ffd6e7;
+    color: #444;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(255, 182, 193, 0.4);
+    transition: top 0.3s ease, left 0.3s ease;
+}
+
+
+
+.kitty-btn:hover {
+    transform: translateY(-6px) scale(1.05);
+    background: #ffbfd8;
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.6);
+}
+
+
+.kitty-btn:active {
+    transform: translateY(1px) scale(0.98);
+}
+
+
+.kitty-btn:hover::before,
+.kitty-btn:hover::after {
+    animation: wiggle 0.5s ease-in-out;
 }
