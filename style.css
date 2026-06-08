@@ -1,5 +1,5 @@
 body {
-        height: 100vh;
+    height: 100vh;
     margin: 0;
     position: relative;
     overflow: hidden;
@@ -41,7 +41,7 @@ body.angry {
     --color5: #e82300;
 }
 
-body.happy{
+body.happy {
     --color1: #af6fb8;
     --color2: #c769c7;
     --color3: #940749;
@@ -63,16 +63,14 @@ body.happy{
     }
 }
 
-#toma {
-    font-size: 42px;
+
+.creature {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-.thething {
-    display: flex;
-    justify-content: center;
-}
 
 #happy {
     height: 500px;
@@ -94,25 +92,20 @@ body.happy{
 
 .kitty-btn {
     display: flex;
-    justify-content: space-between;
-    position: absolute;
-    padding: 32px 72px;
-    border: none;
-    border-radius: 999px;
-    background: #ffd6e7;
-    color: #444;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 6px 15px rgba(255, 182, 193, 0.4);
-    transition: top 0.3s ease, left 0.3s ease;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+    padding: 20px;
+    border-radius: 20px;
+    background: #923357;
 }
 
 
 
 .kitty-btn:hover {
-    transform: translateY(-6px) scale(1.05);
-    background: #ffbfd8;
+    transform: translateY(-2px) scale(1.02);
+    background: #794358;
     box-shadow: 0 10px 20px rgba(255, 182, 193, 0.6);
 }
 
@@ -127,65 +120,75 @@ body.happy{
     animation: wiggle 0.5s ease-in-out;
 }
 
+#toma,
 #reacth3 {
-    display: flex;
-    justify-content: center;
-}
-
-
-#btn {
+    color: white;;
     text-align: center;
-  background-color: #EA4C89;
-  border-radius: 0px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 10px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: color 100ms;
-  vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+        text-shadow: 3px 3px 0 rgb(0, 0, 0);
 }
 
-.button-1:hover,
-.button-1:focus {
-  background-color: #F082AC;
+
+.btn {
+    border: none;
+    border-radius: 18px;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
 }
 
- .bar-container {
-    display: flex;
-    justify-content: center;
+.btn:hover {
+    transform: translateY(-4px) scale(1.05);
+}
+
+.btn:active {
+    transform: translateY(2px) scale(0.96);
+}
+
+.sad-btn {
+    background: linear-gradient(135deg, #4f7cff, #2454d1);
+}
+
+.angry-btn {
+    background: linear-gradient(135deg, #ff5b5b, #d62828);
+}
+
+.happy-btn {
+    background: linear-gradient(135deg, #ff7edb, #d63384);
+}
+
+.feed-btn {
+    background: linear-gradient(135deg, #4ade80, #16a34a);
+}
+
+.bar-container {
+    position: relative;
     width: 300px;
     height: 25px;
     background: #ddd;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 10px;
-  }
+}
 
-  .bar-fill {
+.bar-fill {
     height: 100%;
     width: 100%;
     background: linear-gradient(90deg, #00c853, #64dd17);
     transition: width 0.2s linear;
-  }
+}
 
-  #barbutton {
-    padding: 8px 12px;
-    cursor: pointer;
+#bar-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
-  }
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 14px;
+    pointer-events: none;
+}

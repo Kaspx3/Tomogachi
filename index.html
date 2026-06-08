@@ -10,25 +10,22 @@
 </head>
 
 <body>
-    <h1 id="toma">
-        Hello, I'm your Tomagocha!
-    </h1>
-    <h3 id="reacth3">Interact with Kitty</h3>
-                    <div class="bar-container">
-  <div id="bar" class="bar-fill"></div>
-</div>
+    <h1 id="toma"> Hello, I'm your Tomagocha! </h1> <h3 id="reacth3">Interact with Kitty</h3>
+   <div class="creature">
+    <img id="happy" src="media/happy.png" alt="Kitty">
 
-    <div class="thething">
-        <div id="creature">
-            <image id="happy" src="media/happy.png"></image>
-            <div class="kitty-btn">
-                <button id="btn" onclick="toSad()">Button of sadness</button>
-                <button id="btn" onclick="toAngry()">Spray the kitty with water!</button>
-                <button id="btn" onclick="toHappy()">Pet the kitty</button>
-                <button id="btn" onclick="resetBar()">Feed kitty</button>
-            </div>
-        </div>
+    <div class="kitty-btn">
+        <button class="btn sad-btn" onclick="toSad()">Give kitty homework</button>
+<button class="btn angry-btn" onclick="toAngry()">Spray water on kitty</button>
+<button class="btn happy-btn" onclick="toHappy()">Pet Kitty</button>
+<button class="btn feed-btn" onclick="resetBar()">Feed Kitty</button>
     </div>
+
+    <div class="bar-container">
+        <div id="bar" class="bar-fill"></div>
+        <span id="bar-text">100%</span>
+    </div>
+</div>
 </body>
 
 </html>
