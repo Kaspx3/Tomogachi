@@ -4,15 +4,49 @@ body {
     position: relative;
     overflow: hidden;
 
+    --color1: #af6fb8;
+    --color2: #c769c7;
+    --color3: #940749;
+    --color4: #9c175a;
+    --color5: #d34cbc;
+
+
+
     background: linear-gradient(-45deg,
-            #af6fb8,
-            #c769c7,
-            #940749,
-            #9c175a,
-            #d34cbc);
+            var(--color1),
+            var(--color2),
+            var(--color3),
+            var(--color4),
+            var(--color5));
+
+
 
     background-size: 400% 400%;
     animation: gradientMove 8s ease infinite;
+}
+
+body.sad {
+    --color1: #005f82;
+    --color2: #003882;
+    --color3: #000282;
+    --color4: #4d016b;
+    --color5: #005a63;
+}
+
+body.angry {
+    --color1: #ad0006;
+    --color2: #c91016;
+    --color3: #c95710;
+    --color4: #eb5e07;
+    --color5: #e82300;
+}
+
+body.happy{
+    --color1: #af6fb8;
+    --color2: #c769c7;
+    --color3: #940749;
+    --color4: #9c175a;
+    --color5: #d34cbc;
 }
 
 @keyframes gradientMove {
